@@ -12,8 +12,7 @@ public class ReapingMachine implements MeasurementListener {
     }
 
     public void onChange(int temp, int humidity, int windPower) {
-        int tempThreshold = 5;
-        int humidityThreshold = 65;
+        int tempThreshold = 5, humidityThreshold = 65;
         if (temp > tempThreshold && humidity > humidityThreshold) {
             this.start();
         }

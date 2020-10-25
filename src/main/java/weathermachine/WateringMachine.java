@@ -12,9 +12,7 @@ public class WateringMachine implements MeasurementListener {
     }
 
     public void onChange(int temp, int humidity, int windPower) {
-        int tempThreshold = 10;
-        int humidityThreshold = 55;
-        int windPowerThreshold = 4;
+        int tempThreshold = 10, humidityThreshold = 55, windPowerThreshold = 4;
         if (temp > tempThreshold && humidity < humidityThreshold && windPower < windPowerThreshold) {
             this.start();
         }
