@@ -5,17 +5,14 @@ public class WeatherData {
     private ReapingMachine reapingMachine;
     private WateringMachine wateringMachine;
 
-    public WeatherData(SeedingMachine seedingMachine, ReapingMachine reapingMachine, WateringMachine wateringMachine)
-    {
+    public WeatherData(SeedingMachine seedingMachine, ReapingMachine reapingMachine, WateringMachine wateringMachine) {
         this.seedingMachine = seedingMachine;
         this.reapingMachine = reapingMachine;
         this.wateringMachine = wateringMachine;
     }
 
-    public void measurementsChanged(int temp, int humidity, int windPower)
-    {
-        if (temp > 5)
-        {
+    public void measurementsChanged(int temp, int humidity, int windPower) {
+        if (temp > 5) {
             seedingMachine.start();
 
             if (humidity > 65)
