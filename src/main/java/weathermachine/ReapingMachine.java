@@ -12,6 +12,8 @@ public class ReapingMachine implements MeasurementListener {
     }
 
     public void onChange(int temp, int humidity, int windPower) {
-
+        if (temp > 5 && humidity > 65) {
+            this.start();
+        }
     }
 }
