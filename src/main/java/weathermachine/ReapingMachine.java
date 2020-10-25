@@ -1,6 +1,6 @@
 package weathermachine;
 
-public class ReapingMachine {
+public class ReapingMachine implements MeasurementListener {
     private boolean status;
 
     public boolean getStatus() {
@@ -9,5 +9,9 @@ public class ReapingMachine {
 
     public void start() {
         status = true;
+    }
+
+    public void onChange(int temp, int humidity, int windPower) {
+
     }
 }

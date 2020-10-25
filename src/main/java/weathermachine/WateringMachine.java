@@ -1,6 +1,6 @@
 package weathermachine;
 
-public class WateringMachine {
+public class WateringMachine implements MeasurementListener {
     private boolean status;
 
     public boolean getStatus() {
@@ -9,6 +9,10 @@ public class WateringMachine {
 
     public void start() {
         status = true;
+    }
+
+    public void onChange(int temp, int humidity, int windPower) {
+
     }
 }
 
