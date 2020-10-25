@@ -1,9 +1,9 @@
 package weathermachine;
 
 public class WeatherData {
-    private SeedingMachine seedingMachine;
-    private ReapingMachine reapingMachine;
-    private WateringMachine wateringMachine;
+    private final SeedingMachine seedingMachine;
+    private final ReapingMachine reapingMachine;
+    private final WateringMachine wateringMachine;
 
     public WeatherData(SeedingMachine seedingMachine, ReapingMachine reapingMachine, WateringMachine wateringMachine) {
         this.seedingMachine = seedingMachine;
