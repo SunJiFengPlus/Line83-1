@@ -12,6 +12,8 @@ public class SeedingMachine implements MeasurementListener {
     }
 
     public void onChange(int temp, int humidity, int windPower) {
-
+        if (temp > 5) {
+            this.start();
+        }
     }
 }
